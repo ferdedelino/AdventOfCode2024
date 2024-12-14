@@ -1,4 +1,4 @@
-rootProject.name = "AoC-Day10"
+rootProject.name = "AdventOfCode2024"
 include("Day11")
 include("Day10")
 include("Day12")
