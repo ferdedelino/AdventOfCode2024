@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/CommonUtils/AdventOfCode2024.CommonUtils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/CommonUtils/AdventOfCode2024.CommonUtils.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Day13/AdventOfCode2024.Day13.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Day13/AdventOfCode2024.Day13.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Day14.iml" filepath="$PROJECT_DIR$/Day14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Day14/AdventOfCode2024.Day14.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Day14/AdventOfCode2024.Day14.main.iml" />
     </modules>
   </component>
 </project>

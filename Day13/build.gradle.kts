@@ -15,8 +15,8 @@ dependencies {
 
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
-    implementation("org.apache.commons:commons-lang3:3.0")
 
+    implementation("org.apache.commons:commons-lang3:3.0")
     implementation("com.github.kiprobinson:bigfraction:1.1.0-java7")
     implementation(project(":CommonUtils"))
 }

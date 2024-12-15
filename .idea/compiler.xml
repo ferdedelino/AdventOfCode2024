@@ -11,12 +11,8 @@
         <module name="AdventOfCode2024.CommonUtils.main" />
         <module name="AdventOfCode2024.Day13.main" />
         <module name="AdventOfCode2024.test" />
+        <module name="AdventOfCode2024.Day14.main" />
         <module name="AdventOfCode2024.main" />
-      </profile>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="19">
