@@ -1,4 +1,4 @@
-package org.example;
+package org.day12;
 
 public class Day12Input {
 

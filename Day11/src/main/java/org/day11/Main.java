@@ -1,4 +1,4 @@
-package org.example;
+package org.day11;
 
 import java.util.*;
 

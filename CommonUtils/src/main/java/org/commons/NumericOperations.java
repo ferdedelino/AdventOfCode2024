@@ -1,5 +1,6 @@
-package org.example;
+package org.commons;
 
+import com.github.kiprobinson.bigfraction.BigFraction;
 import org.apache.commons.lang3.math.Fraction;
 
 import java.util.HashMap;
@@ -10,6 +11,7 @@ public abstract class NumericOperations<T extends Number> {
     static {
         operationsMap.put(Double.class, createDouble());
         operationsMap.put(Fraction.class, createFraction());
+        operationsMap.put(BigFraction.class, createBigFraction());
     }
 
     public abstract T multiply(T x, T y);
@@ -17,6 +19,7 @@ public abstract class NumericOperations<T extends Number> {
     public abstract T negate(T x);
     public abstract T invert(T x);
     public abstract T one();
+    public abstract T zero();
     public abstract boolean isZero(T x);
 
     public static <B extends Number> NumericOperations<B> byClass(Class<B> clazz) {
@@ -54,6 +57,11 @@ public abstract class NumericOperations<T extends Number> {
             }
 
             @Override
+            public Double zero() {
+                return 0.0;
+            }
+
+            @Override
             public boolean isZero(Double x) {
                 return Math.abs(x) < 0.0001;
             }
@@ -88,8 +96,52 @@ public abstract class NumericOperations<T extends Number> {
             }
 
             @Override
+            public Fraction zero() {
+                return Fraction.ZERO;
+            }
+
+            @Override
             public boolean isZero(Fraction x) {
                 return x.getNumerator() == 0;
+            }
+        };
+    }
+
+    private static NumericOperations<BigFraction> createBigFraction() {
+        return new NumericOperations<BigFraction>() {
+            @Override
+            public BigFraction multiply(BigFraction x, BigFraction y) {
+                return x.multiply(y);
+            }
+
+            @Override
+            public BigFraction add(BigFraction x, BigFraction y) {
+                return x.add(y);
+            }
+
+            @Override
+            public BigFraction negate(BigFraction x) {
+                return x.negate();
+            }
+
+            @Override
+            public BigFraction invert(BigFraction x) {
+                return BigFraction.ONE.divide(x);
+            }
+
+            @Override
+            public BigFraction one() {
+                return BigFraction.ONE;
+            }
+
+            @Override
+            public BigFraction zero() {
+                return BigFraction.ZERO;
+            }
+
+            @Override
+            public boolean isZero(BigFraction x) {
+                return BigFraction.ZERO.equals(x);
             }
         };
     }

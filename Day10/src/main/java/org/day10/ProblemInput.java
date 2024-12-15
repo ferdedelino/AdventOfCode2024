@@ -1,4 +1,4 @@
-package org.example;
+package org.day10;
 
 public class ProblemInput {
 

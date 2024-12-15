@@ -1,4 +1,4 @@
-package org.example;
+package org.day10;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
