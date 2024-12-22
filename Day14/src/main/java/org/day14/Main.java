@@ -62,8 +62,8 @@ public class Main {
         while (true) {
             step++;
             robots.forEach(robot -> robot.move(1));
-            System.out.println("Current Step: " + step);
             if (printCanvas(room, robots, step)) {
+                System.out.println("Current Step: " + step);
                 return;
             }
         }
