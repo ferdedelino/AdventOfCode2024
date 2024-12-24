@@ -5,7 +5,7 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleJvm" value="corretto-19" />
+        <option name="gradleJvm" value="corretto-17" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/Day01" />
             <option value="$PROJECT_DIR$/Day02" />
             <option value="$PROJECT_DIR$/Day03" />
+            <option value="$PROJECT_DIR$/Day04" />
             <option value="$PROJECT_DIR$/Day10" />
             <option value="$PROJECT_DIR$/Day11" />
             <option value="$PROJECT_DIR$/Day12" />
